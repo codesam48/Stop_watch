@@ -1,0 +1,67 @@
+:root{
+    --primary : rgb(0, 5, 17);
+    --secondary : rgb(2, 170, 212);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    background-color: var(--primary);
+}
+.fam{
+    border: 1px solid var(--secondary);
+    text-align: center;
+    /* width: 16%; */
+    padding: 0% 4%;
+    height: 200px;
+    border-radius: 100px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    position: relative;
+    background-color: rgb(9, 18, 41);
+    padding-top: 2%;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+    margin-top: 5%;
+    height: 30px;
+}
+button{
+    padding: 4%;
+    width: 70px;
+    color: var(--secondary);
+    background-color: inherit;
+    border-radius: 10px;
+    border: 1px solid var(--secondary);
+}
+
+/* .arc{
+    position: absolute;
+    border-top: 20px solid var(--secondary);
+    height: 200px;
+    width: 100%;
+    border-radius: 100px;
+    top: -30px;
+} */
+
+@media (max-width: 780px) {
+    .fam{
+        /* width: 30%;        */
+        padding: 0% 7%;
+    }
+    button{
+        width: 50px;
+    }
+}
+@media (max-width: 480px) {
+    .fam{
+        height: 170px;
+        /* width: 50%; */
+    }
+}
