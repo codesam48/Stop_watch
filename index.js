@@ -35,10 +35,10 @@ function hourRep(){
 start.addEventListener("click", ()=> {
     if (watch !== null) return;
      watch = setInterval(() => {
+        sec++;
         secRep(
             secnds.textContent = sec
-        );
-        sec++;
+        );      
         if(sec == 60){
             sec = 0
             min++
@@ -46,8 +46,6 @@ start.addEventListener("click", ()=> {
                 munits.textContent = min
             );
             if(min == 60){
-                timer.style.fontSize = "30px"
-                timer.style.marginTop = "60%"
                 our++;
                 min = 0; 
                 hourRep(
@@ -56,7 +54,7 @@ start.addEventListener("click", ()=> {
             }
         };
 
-    }, -520);
+    }, 1000);
 });
 
 
