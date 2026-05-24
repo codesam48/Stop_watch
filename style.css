@@ -20,7 +20,7 @@ body{
     align-items: center;
     /* width: 16%; */
     padding: 0% 5%;
-    height: 300px;
+    height: 200px;
     border-radius: 500px;
     background-color: var(--primary);
     color: var(--secondary);
@@ -62,7 +62,7 @@ button{
 }
 @media (max-width: 480px) {
     .fam{
-        height: 190px;
+        height: 170px;
         font-size: 35px;
         /* width: 50%; */
     }

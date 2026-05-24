@@ -10,6 +10,7 @@ const hours = document.querySelector(".hour")
 const start = document.querySelector(".start");
 const reset = document.querySelector(".reset");
 const pause = document.querySelector(".pause");
+secnds.style.fontSize = "0.5em"
 
 let isClicked = null;
 let watch = null;
@@ -54,7 +55,7 @@ start.addEventListener("click", ()=> {
             }
         };
 
-    }, 1000);
+    }, 18);
 });
 
 
